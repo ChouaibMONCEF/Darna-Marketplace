@@ -11,6 +11,8 @@ import SignIn from "./pages/SignIn"
 import ForgotPassword from "./pages/ForgotPassword"
 import Profile from "./pages/Profile"
 import CreateListing from "./pages/CreateListing"
+import Listing from "./pages/Listing"
+import Contact from "./pages/Contact"
 
 
 function App() {
@@ -28,6 +30,8 @@ function App() {
           <Route path='/signup' element={<SignUp />} />
           <Route path='/createListing' element={<CreateListing />} />
           <Route path='/forgotpassword' element={<ForgotPassword />} />
+          <Route path='/category/:categoryName/:listingId' element={<Listing />} />
+          <Route path='/contact/:landlord' element={<Contact />} />
         </Routes>
         <Navbar />
       </Router>
